@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: bai;
+	src: url(fuentes/Bai.ttf);
+}
+h2, p, li, button, h3, h4, a {
+	font-family: bai;
+}
+body {
+	background-color: #E3E3E3;
+}
+
+#menu {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 1em;
+	background-image: url(images/bg-header-desktop.png);
+	
+}
+#menu img {
+	width: 10%;
+	height: 10%;
+	padding: 2em;
+}
+#menu p {
+	font-size: 11px;
+	color: gray;
+}
+.botones {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+.boton button {
+	padding: 10px 20px;
+	border-radius: 40px;
+	border: none;
+}
+.boton-uno button {
+	background-color: #57e5a5;
+	color: white;
+}
+.boton-dos button {
+	background-color: #8448d7;
+	color: white;
+}
+
+
+#banner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 3em;
+}
+#banner h3 {
+	padding-top: 10%;
+	font-size: 25px;
+}
+#banner p {
+	font-size: 11px;
+	color: gray;
+}
+.mess {
+	display: flex;
+	align-items: center;
+	gap: 5em;
+	justify-content: flex-start;
+}
+.mess img {
+	width: 40%;
+	justify-items: flex-start;
+	align-items: flex-start;
+}
+.mess ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3em;
+	list-style: none;
+	text-align: start;
+}
+
+
+.seccion-1 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 1em;
+}
+.seccion-1 h2 {
+	font-size: 25px;
+	padding-top: 10%;
+}
+.seccion-1 p {
+	font-size: 11px;
+	color: gray;
+}
+.seccion-1 img {
+	padding-top: 5em;
+	width: 40%;
+}
+
+
+.seccion-2 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 3em;
+	padding-top: 5em;
+}
+.seccion-2 h3 {
+	padding-top: 10%;
+	font-size: 25px;
+	padding: 1em;
+}
+.seccion-2 p {
+	font-size: 11px;
+	color: gray;
+}
+
+
+.seccion-3 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 6em;
+	padding: 6em;
+}
+
+
+.seccion-4 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 1em;
+    padding: 6em;
+	padding-top: 5em;
+}
+.seccion-4 h2 {
+	font-size: 25px;
+}
+.seccion-4 p {
+	font-size: 11px;
+	color: gray;
+}
+
+
+#pie-pagina {
+	background-color: #d1d1d1;
+	display: flex;
+	justify-content: center; /* Centra horizontalmente los elementos */
+	align-items: center; /* Centra verticalmente los elementos */
+}
+.footherorder {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	width: 80%;
+}
+.footherorder img {
+    padding-top: 1em;
+    width: 5%;
+	height: 5%;
+}
+.info {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	width: 40%;
+    line-height: 2em;
+    font-size: 13px;
+}
+.infosection {
+	display: flex;
+	flex-direction: column;
+}
+.redes {
+    gap: 2em;
+	display: flex;
+	align-items: center;
+}
+.redes-icon img{
+    width: 20px;
+}
+
+@media only screen and (min-width:0px) and (max-width:600px){
+
+	#menu{
+		width: 100%;
+	}
+	#menu img {
+		width: 25%;
+	}
+	#menu p{
+		width: 100%;
+	}
+	.botones{
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+	#banner {
+		width: 100%;
+	}
+	#banner h3 {
+		width: 100%;
+	}
+	#banner p {
+		width: 100%;
+	}
+	.mess {
+		width: 100%;
+		flex-direction: column;
+	}
+	.mess ul {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.seccion-1 {
+		width: 100%;
+	}
+	.seccion-1 h2 {
+		width: 100%;
+	}
+	.seccion-1 p {
+		width: 100%;
+	}
+	.seccion-1 img {
+		width: 50%;
+		flex-direction: column;
+	}
+
+
+	.seccion-2 {
+		width: 100%;
+		flex-direction: column;
+	}
+	.seccion-2 h3 {
+		width: 100%;
+	}
+	.seccion-2 p {
+		width: 100%;
+	}
+
+
+	.seccion-3 {
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+	.seccion-4 {
+		width: 100%;
+		flex-direction: column;
+	}
+	.seccion-4 h2 {
+		width: 100%;
+	}
+	.seccion-4 p {
+		width: 100%;
+	}
+
+
+	#pie-pagina {
+		width: 100%;
+	}
+	.footherorder {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.info {
+		width: 100%;
+		flex-direction: column;
+	}
+	.infosection {
+		width: 100%;
+		align-items: center;
+	}
+	.redes {
+		width: 100%;
+		justify-content: center;
+	}
+	.redes-icon img{
+		width: 70%;
+	}
+}
